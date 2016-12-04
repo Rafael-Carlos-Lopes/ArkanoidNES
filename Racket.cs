@@ -57,6 +57,11 @@ public class Racket : MonoBehaviour {
 
 	void Update()
 	{
+		if (Input.GetKeyDown (KeyCode.Escape)) 
+		{
+			Application.Quit ();
+		}
+		
 		if (lost == true) 
 		{
 			canMove = false;
