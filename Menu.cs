@@ -31,6 +31,11 @@ public class Menu : MonoBehaviour {
 
 			time = 0;
 		}
+		
+		if (Input.GetKeyDown (KeyCode.Escape)) 
+		{
+			Application.Quit ();
+		}
 
 		if (Input.GetKeyDown (KeyCode.Return)) 
 		{
